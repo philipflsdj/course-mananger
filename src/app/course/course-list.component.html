@@ -1,0 +1,22 @@
+<h2> Course List works</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let course of courses'>
+      <th><img [src]="course.imageUrl" width="40" height="40" alt=""></th>
+      <th>{{ course.name }}</th>
+      <th>{{ course.price }}</th>
+      <th>{{ course.rating }}</th>
+    </tr>
+
+  </tbody>
+</table>
+
